@@ -1,0 +1,149 @@
+#  PKGSTATS_ANTERGOS.po
+# 
+#  Copyright © 2016 Antergos
+# 
+#  This file is part of pkgstats.
+# 
+#  pkgstats is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 3 of the License, or
+#  (at your option) any later version.
+# 
+#  pkgstats is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  The following additional terms are in effect as per Section 7 of the license:
+# 
+#  The preservation of all legal notices and author attributions in
+#  the material or in the Appropriate Legal Notices displayed
+#  by works containing it is required.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with pkgstats; If not, see <http://www.gnu.org/licenses/>.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PKGSTATS_ANTERGOS 2.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-20 20:07-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: French (Belgium) (https://www.transifex.com/faidoc/teams/10173/fr_BE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_BE\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Help Message :: Usage Header
+#: pkgstats.sh:51
+msgid "Usage"
+msgstr ""
+
+#. Help Message :: Command line option
+#: pkgstats.sh:53 pkgstats.sh:55
+msgid "option"
+msgid_plural "options"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Help Message :: Option :: Show Version
+#: pkgstats.sh:57
+msgid "show version"
+msgstr ""
+
+#. Help Message :: Option :: Debug Mode
+#: pkgstats.sh:59
+msgid "enable debug mode"
+msgstr ""
+
+#. Help Message :: Option :: Show Help
+#: pkgstats.sh:61
+msgid "show this help message"
+msgstr ""
+
+#. Help Message :: Option :: Dry Run Line 1
+#: pkgstats.sh:63
+msgid "show what information would be sent"
+msgstr ""
+
+#. Help Message :: Option :: Dry Run Line 2
+#: pkgstats.sh:65
+msgid "but do not send anything"
+msgstr ""
+
+#. Help Message :: Option :: Quiet Mode
+#: pkgstats.sh:67
+msgid "be quiet except on errors"
+msgstr ""
+
+#. Help Message :: Description Line 1
+#: pkgstats.sh:69
+msgid "pkgstats sends a list of all installed packages,"
+msgstr ""
+
+#. Help Message :: Description Line 2
+#: pkgstats.sh:71
+msgid "the architecture, and the mirror you are using"
+msgstr ""
+
+#. Help Message :: Description Line 3
+#: pkgstats.sh:73
+msgid "to the Antergos and Arch Linux projects."
+msgstr ""
+
+#. Help Message :: Description Line 4
+#: pkgstats.sh:75
+msgid "Statistics are available at:"
+msgstr ""
+
+#. Status Message :: Collecting
+#: pkgstats.sh:77
+msgid "Collecting data..."
+msgstr ""
+
+#. Status Message :: Submitting
+#: pkgstats.sh:79
+msgid "Submitting data..."
+msgstr ""
+
+#. Status Message :: Failed to send data to [Antergos/Arch]
+#: pkgstats.sh:81
+msgid "Sorry, data could not be sent to"
+msgstr ""
+
+#. Display Version Message
+#: pkgstats.sh:83
+msgid "version"
+msgstr ""
+
+#. Show Results Message :: Packages List
+#: pkgstats.sh:85
+msgid "Package"
+msgid_plural "Packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Show Results Message :: Kernel Modules List
+#: pkgstats.sh:87
+msgid "Module"
+msgid_plural "Modules"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Show Results Message :: Package Architecture
+#: pkgstats.sh:89
+msgid "Package Arch"
+msgstr ""
+
+#. Show Results Message :: CPU Architecture
+#: pkgstats.sh:91
+msgid "CPU Arch"
+msgstr ""
+
+#. Show Results Message :: Mirror
+#: pkgstats.sh:93
+msgid "Mirror"
+msgstr ""
