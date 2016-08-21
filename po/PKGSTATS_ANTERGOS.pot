@@ -38,17 +38,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. ===>>> BEGIN Translatable Strings <<<=== #
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
 msgstr ""
 
-#. Help Message :: A single command line option
-#. Help Message :: Multiple command line options
+#. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
 msgid "option"
-msgstr ""
+msgid_plural "options"
+msgstr[0] ""
+msgstr[5] ""
 
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
@@ -123,12 +123,16 @@ msgstr ""
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
-msgstr ""
+msgid_plural "Packages"
+msgstr[0] ""
+msgstr[5] ""
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
-msgstr ""
+msgid_plural "Modules"
+msgstr[0] ""
+msgstr[5] ""
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
