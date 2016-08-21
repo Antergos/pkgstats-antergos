@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[antergos.pkgstats_antergos]
+file_filter = po/<lang>.po
+source_lang = en
+source_file = po/PKGSTATS_ANTERGOS.pot
+type = PO
+
