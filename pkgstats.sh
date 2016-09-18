@@ -86,11 +86,11 @@ _results_pkgs=$(NGETTEXT 'Package' 'Packages' 5)
 # Show Results Message :: Kernel Modules List
 _results_modules=$(NGETTEXT 'Module' 'Modules' 5)
 # Show Results Message :: Package Architecture
-_results_arch=$(GETTEXT 'Package Arch')
+_results_arch=$(GETTEXT 'Package arch')
 # Show Results Message :: CPU Architecture
-_results_cpuarch=$(GETTEXT 'CPU Arch')
+_results_cpuarch=$(GETTEXT 'CPU arch')
 # Show Results Message :: Mirror
-_results_mirror=$(GETTEXT 'Mirror')
+_results_mirror=$(GETTEXT 'mirror')
 
 # ===>>> END Translatable Strings <<<=== #
 
@@ -101,7 +101,8 @@ collect_stats() {
 	pkglist="$(mktemp --tmpdir pkglist.XXXXXX)"
 	moduleslist="$(mktemp --tmpdir modules.XXXXXX)"
 	arch="$(uname -m)"
-	mirror="$(get_mirror)"
+	mirror="$(get_mirror archlinux)"
+	mirror_antergos="$(get_mirror)"
 	cpuarch=''
 
 	trap 'rm -f "${pkglist}" "${moduleslist}"' EXIT
@@ -117,7 +118,15 @@ collect_stats() {
 
 
 get_mirror() {
-	pacman -Sddp antergos/pkgstats 2>/dev/null | sed -E 's#(.*/)antergos/.*#\1#;s#(.*://).*@#\1#'
+	local archlinux antergos
+	archlinux='s#(.*/)core/os/.*#\1#;s#(.*://).*@#\1#'
+	antergos='s#(.*/)antergos/(x86_64|i686)/(.*)#\1#'
+
+	if [[ archlinux = "$1" ]]; then
+		pacman -Sddp core/pacman 2>/dev/null | sed -E "${archlinux}"
+	else
+		pacman -Sddp antergos/pkgstats-antergos 2>/dev/null | sed -E "${antergos}"
+	fi
 }
 
 
@@ -140,6 +149,7 @@ send_stats() {
 			--data-urlencode "cpuarch=${cpuarch}" \
 			--data-urlencode "mirror=${mirror}" \
 			--data-urlencode "quiet=${quiet}" \
+			--data-urlencode "antergos=1" \
 			"https://${_url}" || { log "${_sending_failed}: ${_url}" >&2 && result=1; }
 	done
 
@@ -150,15 +160,18 @@ send_stats() {
 show_stats() {
 	cat <<-EOS
 	${_results_pkgs}:
+
 		$(cat ${pkglist})
 
 	${_results_modules}:
+
 		$(cat ${moduleslist})
 
 	${_results_arch}: ${arch}
 	${_results_cpuarch}: ${cpuarch}
 	pkgstats ${_version}: ${pkgstatsver}
-	${_results_mirror}: ${mirror}
+	archlinux ${_results_mirror}: ${mirror}
+	antergos ${_results_mirror}:  ${mirror_antergos}
 	EOS
 
 	exit 0
