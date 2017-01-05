@@ -30,6 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Alex <shantanna@hotmail.com>, 2016\n"
 "Language-Team: Russian (https://www.transifex.com/faidoc/teams/10173/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
@@ -40,116 +41,116 @@ msgstr ""
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
-msgstr ""
+msgstr "Применение"
 
 #. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
 msgid "option"
 msgid_plural "options"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "опция"
+msgstr[1] "опций"
+msgstr[2] "опции"
+msgstr[3] "опция"
 
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
 msgid "show version"
-msgstr ""
+msgstr "показать версию"
 
 #. Help Message :: Option :: Debug Mode
 #: pkgstats.sh:59
 msgid "enable debug mode"
-msgstr ""
+msgstr "включить режим отладки"
 
 #. Help Message :: Option :: Show Help
 #: pkgstats.sh:61
 msgid "show this help message"
-msgstr ""
+msgstr "показать это справочное сообщение"
 
 #. Help Message :: Option :: Dry Run Line 1
 #: pkgstats.sh:63
 msgid "show what information would be sent"
-msgstr ""
+msgstr "показать, какая информация будет отправлена"
 
 #. Help Message :: Option :: Dry Run Line 2
 #: pkgstats.sh:65
 msgid "but do not send anything"
-msgstr ""
+msgstr "но ничего не посылайте"
 
 #. Help Message :: Option :: Quiet Mode
 #: pkgstats.sh:67
 msgid "be quiet except on errors"
-msgstr ""
+msgstr "не оповещать за исключением ошибок"
 
 #. Help Message :: Description Line 1
 #: pkgstats.sh:69
 msgid "pkgstats sends a list of all installed packages,"
-msgstr ""
+msgstr "pkgstats отправляет список всех установленных пакетов,"
 
 #. Help Message :: Description Line 2
 #: pkgstats.sh:71
 msgid "the architecture, and the mirror you are using"
-msgstr ""
+msgstr "архитектура и зеркало, которое вы используете"
 
 #. Help Message :: Description Line 3
 #: pkgstats.sh:73
 msgid "to the Antergos and Arch Linux projects."
-msgstr ""
+msgstr "к проектам Antergos и Arch Linux."
 
 #. Help Message :: Description Line 4
 #: pkgstats.sh:75
 msgid "Statistics are available at:"
-msgstr ""
+msgstr "Статистики доступны на:"
 
 #. Status Message :: Collecting
 #: pkgstats.sh:77
 msgid "Collecting data..."
-msgstr ""
+msgstr "Сбор данных..."
 
 #. Status Message :: Submitting
 #: pkgstats.sh:79
 msgid "Submitting data..."
-msgstr ""
+msgstr "Передача данных..."
 
 #. Status Message :: Failed to send data to [Antergos/Arch]
 #: pkgstats.sh:81
 msgid "Sorry, data could not be sent to"
-msgstr ""
+msgstr "К сожалению, данные не могут быть отправлены"
 
 #. Display Version Message
 #: pkgstats.sh:83
 msgid "version"
-msgstr ""
+msgstr "версия"
 
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "пакет"
+msgstr[1] "пакетов"
+msgstr[2] "пакеты"
+msgstr[3] "пакет"
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
 msgid_plural "Modules"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Модуль"
+msgstr[1] "Модулей"
+msgstr[2] "Модули"
+msgstr[3] "Модуль"
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
 msgid "Package Arch"
-msgstr ""
+msgstr "Пакет Arch"
 
 #. Show Results Message :: CPU Architecture
 #: pkgstats.sh:91
 msgid "CPU Arch"
-msgstr ""
+msgstr "CPU Arch"
 
 #. Show Results Message :: Mirror
 #: pkgstats.sh:93
 msgid "Mirror"
-msgstr ""
+msgstr "Зеркало"

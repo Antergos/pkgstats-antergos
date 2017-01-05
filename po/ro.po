@@ -30,6 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dustin Falgout <dustin@falgout.us>, 2016\n"
 "Language-Team: Romanian (https://www.transifex.com/faidoc/teams/10173/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
@@ -40,113 +41,113 @@ msgstr ""
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
-msgstr ""
+msgstr "Utilizare"
 
 #. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
 msgid "option"
 msgid_plural "options"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "opţiune"
+msgstr[1] "opţiuni"
+msgstr[2] "opţiuni"
 
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
 msgid "show version"
-msgstr ""
+msgstr "Arată versiune"
 
 #. Help Message :: Option :: Debug Mode
 #: pkgstats.sh:59
 msgid "enable debug mode"
-msgstr ""
+msgstr "permite modul de depanare"
 
 #. Help Message :: Option :: Show Help
 #: pkgstats.sh:61
 msgid "show this help message"
-msgstr ""
+msgstr "Arată acest mesaj de ajutor"
 
 #. Help Message :: Option :: Dry Run Line 1
 #: pkgstats.sh:63
 msgid "show what information would be sent"
-msgstr ""
+msgstr "Arată ce informaţii ar fi trimis"
 
 #. Help Message :: Option :: Dry Run Line 2
 #: pkgstats.sh:65
 msgid "but do not send anything"
-msgstr ""
+msgstr "dar nu trimite nimic"
 
 #. Help Message :: Option :: Quiet Mode
 #: pkgstats.sh:67
 msgid "be quiet except on errors"
-msgstr ""
+msgstr "fi linistit cu excepţia erori"
 
 #. Help Message :: Description Line 1
 #: pkgstats.sh:69
 msgid "pkgstats sends a list of all installed packages,"
-msgstr ""
+msgstr "pkgstats trimite o lista toate pachetele instalate,"
 
 #. Help Message :: Description Line 2
 #: pkgstats.sh:71
 msgid "the architecture, and the mirror you are using"
-msgstr ""
+msgstr "arhitectura şi oglinda utilizaţi"
 
 #. Help Message :: Description Line 3
 #: pkgstats.sh:73
 msgid "to the Antergos and Arch Linux projects."
-msgstr ""
+msgstr "în proiecte Antergos şi Arch Linux."
 
 #. Help Message :: Description Line 4
 #: pkgstats.sh:75
 msgid "Statistics are available at:"
-msgstr ""
+msgstr "Statisticile sunt disponibile la:"
 
 #. Status Message :: Collecting
 #: pkgstats.sh:77
 msgid "Collecting data..."
-msgstr ""
+msgstr "Colectarea de date..."
 
 #. Status Message :: Submitting
 #: pkgstats.sh:79
 msgid "Submitting data..."
-msgstr ""
+msgstr "Remiterea de date..."
 
 #. Status Message :: Failed to send data to [Antergos/Arch]
 #: pkgstats.sh:81
 msgid "Sorry, data could not be sent to"
-msgstr ""
+msgstr "Ne pare rau, datele nu a trimis să"
 
 #. Display Version Message
 #: pkgstats.sh:83
 msgid "version"
-msgstr ""
+msgstr "versiune"
 
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Pachet"
+msgstr[1] "Pachete"
+msgstr[2] "Pachete"
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
 msgid_plural "Modules"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Modulul"
+msgstr[1] "Module"
+msgstr[2] "Module"
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
 msgid "Package Arch"
-msgstr ""
+msgstr "Pachet arc"
 
 #. Show Results Message :: CPU Architecture
 #: pkgstats.sh:91
 msgid "CPU Arch"
-msgstr ""
+msgstr "CPU Arch"
 
 #. Show Results Message :: Mirror
 #: pkgstats.sh:93
 msgid "Mirror"
-msgstr ""
+msgstr "Oglinda"

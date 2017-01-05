@@ -30,6 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>, 2016\n"
 "Language-Team: Slovak (https://www.transifex.com/faidoc/teams/10173/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
@@ -40,113 +41,113 @@ msgstr ""
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
-msgstr ""
+msgstr "Použitie"
 
 #. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
 msgid "option"
 msgid_plural "options"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "voľba"
+msgstr[1] "voľby"
+msgstr[2] "volieb"
 
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
 msgid "show version"
-msgstr ""
+msgstr "zobrazí verziu"
 
 #. Help Message :: Option :: Debug Mode
 #: pkgstats.sh:59
 msgid "enable debug mode"
-msgstr ""
+msgstr "povolí režim ladenia"
 
 #. Help Message :: Option :: Show Help
 #: pkgstats.sh:61
 msgid "show this help message"
-msgstr ""
+msgstr "zobrazí túto správu pomocníka"
 
 #. Help Message :: Option :: Dry Run Line 1
 #: pkgstats.sh:63
 msgid "show what information would be sent"
-msgstr ""
+msgstr "zobrazí, ktoré informácie budú odoslané"
 
 #. Help Message :: Option :: Dry Run Line 2
 #: pkgstats.sh:65
 msgid "but do not send anything"
-msgstr ""
+msgstr "neodošle žiadne údaje"
 
 #. Help Message :: Option :: Quiet Mode
 #: pkgstats.sh:67
 msgid "be quiet except on errors"
-msgstr ""
+msgstr "tichý režim s výnimkou chýb"
 
 #. Help Message :: Description Line 1
 #: pkgstats.sh:69
 msgid "pkgstats sends a list of all installed packages,"
-msgstr ""
+msgstr "Program pkgstats odosiela zoznam všetkých nainštalovaných balíkov,"
 
 #. Help Message :: Description Line 2
 #: pkgstats.sh:71
 msgid "the architecture, and the mirror you are using"
-msgstr ""
+msgstr "architektúru a zrkadlo, ktoré používate,"
 
 #. Help Message :: Description Line 3
 #: pkgstats.sh:73
 msgid "to the Antergos and Arch Linux projects."
-msgstr ""
+msgstr "projektu Antergos a Arch Linux."
 
 #. Help Message :: Description Line 4
 #: pkgstats.sh:75
 msgid "Statistics are available at:"
-msgstr ""
+msgstr "Štatistika je dostupná na:"
 
 #. Status Message :: Collecting
 #: pkgstats.sh:77
 msgid "Collecting data..."
-msgstr ""
+msgstr "Zbierajú sa údaje..."
 
 #. Status Message :: Submitting
 #: pkgstats.sh:79
 msgid "Submitting data..."
-msgstr ""
+msgstr "Odovzdávajú sa údaje..."
 
 #. Status Message :: Failed to send data to [Antergos/Arch]
 #: pkgstats.sh:81
 msgid "Sorry, data could not be sent to"
-msgstr ""
+msgstr "Prepáčte, údaje sa nepodarilo odoslať projektu"
 
 #. Display Version Message
 #: pkgstats.sh:83
 msgid "version"
-msgstr ""
+msgstr "verzia"
 
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "balík"
+msgstr[1] "balíky"
+msgstr[2] "balíkov"
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
 msgid_plural "Modules"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "modul"
+msgstr[1] "moduly"
+msgstr[2] "modulov"
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
 msgid "Package Arch"
-msgstr ""
+msgstr "Architektúra balíkov"
 
 #. Show Results Message :: CPU Architecture
 #: pkgstats.sh:91
 msgid "CPU Arch"
-msgstr ""
+msgstr "Architektúra procesora"
 
 #. Show Results Message :: Mirror
 #: pkgstats.sh:93
 msgid "Mirror"
-msgstr ""
+msgstr "Zrkadlo"

@@ -30,6 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Cormango <cenk.or@gmail.com>, 2016\n"
 "Language-Team: Turkish (https://www.transifex.com/faidoc/teams/10173/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
@@ -40,110 +41,110 @@ msgstr ""
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
-msgstr ""
+msgstr "Kullanım"
 
 #. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
 msgid "option"
 msgid_plural "options"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "seçenek"
+msgstr[1] "seçenekler"
 
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
 msgid "show version"
-msgstr ""
+msgstr "versiyon göster"
 
 #. Help Message :: Option :: Debug Mode
 #: pkgstats.sh:59
 msgid "enable debug mode"
-msgstr ""
+msgstr "ayıklama modunu etkinleştir"
 
 #. Help Message :: Option :: Show Help
 #: pkgstats.sh:61
 msgid "show this help message"
-msgstr ""
+msgstr "bu yardım mesajını göster"
 
 #. Help Message :: Option :: Dry Run Line 1
 #: pkgstats.sh:63
 msgid "show what information would be sent"
-msgstr ""
+msgstr "hangi bilginin gönderileceğini göster"
 
 #. Help Message :: Option :: Dry Run Line 2
 #: pkgstats.sh:65
 msgid "but do not send anything"
-msgstr ""
+msgstr "fakat hiçbirşey göndermedi"
 
 #. Help Message :: Option :: Quiet Mode
 #: pkgstats.sh:67
 msgid "be quiet except on errors"
-msgstr ""
+msgstr "hatalar dışında sessiz ol"
 
 #. Help Message :: Description Line 1
 #: pkgstats.sh:69
 msgid "pkgstats sends a list of all installed packages,"
-msgstr ""
+msgstr "pkgstat tüm yüklenen paketlerin listesini gönderiyor,"
 
 #. Help Message :: Description Line 2
 #: pkgstats.sh:71
 msgid "the architecture, and the mirror you are using"
-msgstr ""
+msgstr "kullandığınız mimari, ve yansıma"
 
 #. Help Message :: Description Line 3
 #: pkgstats.sh:73
 msgid "to the Antergos and Arch Linux projects."
-msgstr ""
+msgstr "Antergos ve Arch Linux projelerine."
 
 #. Help Message :: Description Line 4
 #: pkgstats.sh:75
 msgid "Statistics are available at:"
-msgstr ""
+msgstr "İstatistiklere buradan ulaşılabilir:"
 
 #. Status Message :: Collecting
 #: pkgstats.sh:77
 msgid "Collecting data..."
-msgstr ""
+msgstr "Data toplanıyor..."
 
 #. Status Message :: Submitting
 #: pkgstats.sh:79
 msgid "Submitting data..."
-msgstr ""
+msgstr "Data gönderiliyor..."
 
 #. Status Message :: Failed to send data to [Antergos/Arch]
 #: pkgstats.sh:81
 msgid "Sorry, data could not be sent to"
-msgstr ""
+msgstr "Üzgünüm, data gonderilemedi"
 
 #. Display Version Message
 #: pkgstats.sh:83
 msgid "version"
-msgstr ""
+msgstr "versiyon"
 
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Paket"
+msgstr[1] "Paketler"
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
 msgid_plural "Modules"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Modül"
+msgstr[1] "Modüller"
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
 msgid "Package Arch"
-msgstr ""
+msgstr "Paket Arch"
 
 #. Show Results Message :: CPU Architecture
 #: pkgstats.sh:91
 msgid "CPU Arch"
-msgstr ""
+msgstr "CPU Arch"
 
 #. Show Results Message :: Mirror
 #: pkgstats.sh:93
 msgid "Mirror"
-msgstr ""
+msgstr "Ayna Bağlantı"

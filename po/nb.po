@@ -30,6 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Christian Helling <chrhelling@icloud.com>, 2016\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/faidoc/teams/10173/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
@@ -40,7 +41,7 @@ msgstr ""
 #. Help Message :: Usage Header
 #: pkgstats.sh:51
 msgid "Usage"
-msgstr ""
+msgstr "Bruk"
 
 #. Help Message :: Command line option
 #: pkgstats.sh:53 pkgstats.sh:55
@@ -52,7 +53,7 @@ msgstr[1] ""
 #. Help Message :: Option :: Show Version
 #: pkgstats.sh:57
 msgid "show version"
-msgstr ""
+msgstr "Vis versjon"
 
 #. Help Message :: Option :: Debug Mode
 #: pkgstats.sh:59
@@ -62,7 +63,7 @@ msgstr ""
 #. Help Message :: Option :: Show Help
 #: pkgstats.sh:61
 msgid "show this help message"
-msgstr ""
+msgstr "Vis denne hjelpe meldingen"
 
 #. Help Message :: Option :: Dry Run Line 1
 #: pkgstats.sh:63
@@ -72,12 +73,12 @@ msgstr ""
 #. Help Message :: Option :: Dry Run Line 2
 #: pkgstats.sh:65
 msgid "but do not send anything"
-msgstr ""
+msgstr "men ikke send noe"
 
 #. Help Message :: Option :: Quiet Mode
 #: pkgstats.sh:67
 msgid "be quiet except on errors"
-msgstr ""
+msgstr "Vær stille bortsett på feil"
 
 #. Help Message :: Description Line 1
 #: pkgstats.sh:69
@@ -102,36 +103,36 @@ msgstr ""
 #. Status Message :: Collecting
 #: pkgstats.sh:77
 msgid "Collecting data..."
-msgstr ""
+msgstr "Samler data..."
 
 #. Status Message :: Submitting
 #: pkgstats.sh:79
 msgid "Submitting data..."
-msgstr ""
+msgstr "Sender data..."
 
 #. Status Message :: Failed to send data to [Antergos/Arch]
 #: pkgstats.sh:81
 msgid "Sorry, data could not be sent to"
-msgstr ""
+msgstr "Beklager, data kunne ikke sendes til"
 
 #. Display Version Message
 #: pkgstats.sh:83
 msgid "version"
-msgstr ""
+msgstr "Vesjon"
 
 #. Show Results Message :: Packages List
 #: pkgstats.sh:85
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Pakke"
+msgstr[1] "Pakker"
 
 #. Show Results Message :: Kernel Modules List
 #: pkgstats.sh:87
 msgid "Module"
 msgid_plural "Modules"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Modul"
+msgstr[1] "Moduler"
 
 #. Show Results Message :: Package Architecture
 #: pkgstats.sh:89
@@ -146,4 +147,4 @@ msgstr ""
 #. Show Results Message :: Mirror
 #: pkgstats.sh:93
 msgid "Mirror"
-msgstr ""
+msgstr "Speil"
