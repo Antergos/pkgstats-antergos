@@ -2,7 +2,7 @@
 #
 #  pkgstats.sh
 #
-#  Copyright © 2016 Antergos
+#  Copyright © 2016-2017 Antergos
 #  Copyright © 2008-2016 Arch Linux
 #
 #  This file is part of pkgstats.
@@ -39,10 +39,11 @@ NGETTEXT() {
 
 
 # Defaults
-pkgstatsver='2.3.1'
+pkgstatsver='2.3'
+ant_pkgstatsver='2.3.1'
 showonly=false
 quiet=false
-option='-q -s -S'
+option='-qsS'
 
 
 # ===>>> BEGIN Translatable Strings <<<=== #
@@ -109,7 +110,7 @@ collect_stats() {
 	
 	pacman -Qq > "${pkglist}"
 
-	[[ -f /proc/modules ]] && awk '{ print $1 }' /proc/modules > "${moduleslist}"
+	[[ -f /proc/modules ]] && awk '{ print $1 }' /proc/modules | sort -d > "${moduleslist}"
 	
 	if [[ -f /proc/cpuinfo ]]; then
 		{ grep -qE '^flags\s*:.*\slm\s' /proc/cpuinfo && cpuarch='x86_64'; } || cpuarch='i686'
@@ -135,6 +136,12 @@ log() {
 }
 
 
+maybe_show_stats() {
+	[[ true = "${quiet}" ]] || show_stats
+	return 0
+}
+
+
 send_stats() {
 	log "${_sending_data}"
 	result=0
@@ -151,6 +158,8 @@ send_stats() {
 			--data-urlencode "quiet=${quiet}" \
 			--data-urlencode "antergos=1" \
 			"https://${_url}" || { log "${_sending_failed}: ${_url}" >&2 && result=1; }
+
+		pkgstatsver="${ant_pkgstatsver}"
 	done
 
 	return "${result}"
@@ -159,22 +168,24 @@ send_stats() {
 
 show_stats() {
 	cat <<-EOS
-	${_results_pkgs}:
+		${_results_pkgs}:
 
-		$(cat ${pkglist})
+			$(sed 's/^/    /g' ${pkglist})
 
-	${_results_modules}:
+		${_results_modules}:
 
-		$(cat ${moduleslist})
+			$(sed 's/^/    /g' ${moduleslist})
 
-	${_results_arch}: ${arch}
-	${_results_cpuarch}: ${cpuarch}
-	pkgstats ${_version}: ${pkgstatsver}
-	archlinux ${_results_mirror}: ${mirror}
-	antergos ${_results_mirror}:  ${mirror_antergos}
+		${_results_arch}: ${arch}
+		${_results_cpuarch}: ${cpuarch}
+		pkgstats ${_version}: ${ant_pkgstatsver}
+		archlinux ${_results_mirror}: ${mirror}
+		antergos ${_results_mirror}:  ${mirror_antergos}
 	EOS
 
-	exit 0
+	[[ true = "${showonly}" ]] && exit 0
+
+	return 0
 }
 
 
@@ -202,21 +213,19 @@ show_usage() {
 
 
 
-while getopts 'vdhsq' parameter; do
+while getopts vdhsq parameter
+do
 	case ${parameter} in
-		v)	echo "pkgstats, ${_version} ${pkgstatsver}"; exit 0;;
-		d)	option="${option} --trace-ascii -";;
-		s)	showonly=true;;
-		q)	quiet=true;;
-		*)	show_usage; exit 1;;
+		v) echo "pkgstats, ${_version} ${pkgstatsver}"; exit 0 ;;
+		d) option="${option} --trace-ascii -" ;;
+		s) showonly=true ;;
+		q) quiet=true ;;
+		*) show_usage; exit 1 ;;
 	esac
 done
 
 
-collect_stats
+collect_stats && maybe_show_stats && send_stats && exit 0
 
-[[ true = "${showonly}" ]] && show_stats
+exit 1
 
-send_stats
-
-exit 0
