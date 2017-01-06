@@ -40,10 +40,14 @@ NGETTEXT() {
 
 # Defaults
 pkgstatsver='2.3'
-ant_pkgstatsver='2.3.1'
+ant_pkgstatsver='2.3.2'
 showonly=false
 quiet=false
 option='-qsS'
+
+install_id_file='/var/log/cnchi/install_id'
+install_id=''
+machine_id=''
 
 
 # ===>>> BEGIN Translatable Strings <<<=== #
@@ -157,12 +161,22 @@ send_stats() {
 			--data-urlencode "mirror=${mirror}" \
 			--data-urlencode "quiet=${quiet}" \
 			--data-urlencode "antergos=1" \
+			--data-urlencode "install_id=${install_id}" \
+			--data-urlencode "machine_id=${machine_id}" \
 			"https://${_url}" || { log "${_sending_failed}: ${_url}" >&2 && result=1; }
 
 		pkgstatsver="${ant_pkgstatsver}"
 	done
 
 	return "${result}"
+}
+
+
+set_id_vars() {
+	[[ -f "${install_id_file}" ]] && install_id=$(< "${install_id_file}")
+	[[ -f '/etc/machine-id' ]] && machine_id=$(< '/etc/machine-id')
+
+	[[ '' != "${install_id}" && '' != "${machine_id}" ]]
 }
 
 
@@ -225,7 +239,7 @@ do
 done
 
 
-collect_stats && maybe_show_stats && send_stats && exit 0
+set_id_vars && collect_stats && maybe_show_stats && send_stats && exit 0
 
 exit 1
 
